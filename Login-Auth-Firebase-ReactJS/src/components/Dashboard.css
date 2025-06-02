@@ -1,0 +1,64 @@
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --card-bg: #ffffff;
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #dee2e6;
+  --button-hover: #e9ecef;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card-bg: #1e1e2e;
+  --sidebar-bg: #1a1a1a;
+  --sidebar-border: #333;
+  --button-hover: #2c2c2c;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-container {
+  background-color: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  height: 100vh;
+  padding: 1rem;
+  color: var(--text);
+}
+
+.sidebar h4 {
+  font-weight: bold;
+}
+
+.sidebar button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  color: var(--text);
+  background-color: transparent;
+  border: none;
+}
+
+.sidebar button:hover {
+  background-color: var(--button-hover);
+  border-radius: 5px;
+}
+
+.card-custom {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
